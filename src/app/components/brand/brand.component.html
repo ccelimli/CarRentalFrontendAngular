@@ -1,0 +1,13 @@
+<div *ngIf="dataLoaded==false" class="spinner-border" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div id="sidebar" style="text-align:center;">
+    <header>
+      <a href="#">Markalar</a>
+    </header>
+    <table class="table">
+      <tr *ngFor="let brand of brands" style="color:white; border: 1px #000;">
+        <td>{{brand.brandName}}</td>
+    </table>
+  </div>
+
